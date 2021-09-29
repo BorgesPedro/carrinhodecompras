@@ -4,6 +4,8 @@ Projeto feito utilizando [ReactJS](https://github.com/facebook/create-react-app)
 
 ## Para rodar o projeto
 
+Primeiramente rode `yarn install` para instalar as dependências necessárias.
+
 Nesse diretório você encontra os seguintes comandos: 
 
 ### `yarn start`
