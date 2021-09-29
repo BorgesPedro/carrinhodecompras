@@ -12,13 +12,13 @@ interface CarrinhoProps {
 }
 
 
-export function Carrinho() {
+export function CarrinhoBaixo() {
   const[products, setProducts] = useState<CarrinhoProps[]>([])
   const[prices, setPrices] = useState(0)
-  let total = 0
+  let total = 0;
 
   useEffect(() => {  
-    api.get("cima")
+    api.get("baixo")
     .then(response => setProducts(response.data.items))
 
   }, [])
