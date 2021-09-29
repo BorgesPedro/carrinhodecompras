@@ -15,7 +15,9 @@ Abra [http://localhost:3000](http://localhost:3000) para poder visualizar a apli
 
 ### `yarn run`
 
-Para rodar a API que estará rodando em [http://localhost:3300](http://localhost:3300)
+Para rodar a API que estará rodando em [http://localhost:3300](http://localhost:3300) ---
+Para ver o JSON da soma acima de R$10,00 [http://localhost:3300/cima](http://localhost:3300/cima)
+Para ver o JSON da soma abaixo de R$10,00 [http://localhost:3300/baixo](http://localhost:3300/baixo)
 
 ## Rotas da aplicação
 ### Página inicial `/`
