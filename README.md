@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+# Codeby - Teste do carrinho
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto feito utilizando [ReactJS](https://github.com/facebook/create-react-app) e [TypeScript](https://www.typescriptlang.org/).
 
-## Available Scripts
+## Para rodar o projeto
 
-In the project directory, you can run:
+Primeiramente rode `yarn install` para instalar as dependências necessárias.
+
+Nesse diretório você encontra os seguintes comandos: 
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para rodar a aplicação em versão de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para poder visualizar a aplicação.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `yarn run`
 
-### `yarn test`
+Para rodar a API que estará rodando em [http://localhost:3300](http://localhost:3300) ---
+Para ver o JSON da soma acima de R$10,00 [http://localhost:3300/cima](http://localhost:3300/cima)
+Para ver o JSON da soma abaixo de R$10,00 [http://localhost:3300/baixo](http://localhost:3300/baixo)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Rotas da aplicação
+### Página inicial `/`
+Nessa rota se encontra o carrinho com soma total dos produtos acima de R$10,00 (Apresenta a mensagem de frete grátis).
+### Soma abaixo de 10 `/abaixo-de-dez`
+Nessa rota se encontra o carrinho com soma total dos produtos abaixo de R$10,00 (Não apresenta a mensagem de frete grátis).
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Dados utilizados dos arquivos JSON
+### items: [
+  `id: number;`
+  `name: string;`
+  `price: number;`
+  `imageUrl: string;`
+  `sellingPrice: number;`
+]
