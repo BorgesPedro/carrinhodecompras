@@ -5,8 +5,8 @@ import { GlobalStyle } from './styles/Global';
 function App() {
   return (
     <>
-    <Carrinho />
-    <GlobalStyle />
+      <Carrinho />
+      <GlobalStyle />
     </>
   );
 }

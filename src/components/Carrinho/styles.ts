@@ -25,17 +25,28 @@ export const Container = styled.div`
     }
   }
   .total {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
+    border-top: 1px solid var(--divisor);
     padding: 1.8rem;
-    p,span {
+    .total-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p,span {
       font-weight: 800;
       font-size: 1.5rem;
+      }
+    }
+    
+    
+    .congratulations {
+      display: inline;
     }
   }
   main .product-list {
-    max-height: 450px;
+    height: 450px;
     overflow-y: scroll;
     ::-webkit-scrollbar {
     width: 10px;

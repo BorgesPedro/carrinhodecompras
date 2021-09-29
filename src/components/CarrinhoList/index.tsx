@@ -5,6 +5,7 @@ interface CarrinhoListProps {
   name: string;
   price: number;
   imageUrl: string;
+  sellingPrice: number;
 }
 
 export function CarrinhoList(props: CarrinhoListProps){
@@ -15,8 +16,8 @@ export function CarrinhoList(props: CarrinhoListProps){
             <img src={props.imageUrl} alt={props.name} height="110px" width="110px"/>
             <div className="product-info">
               <h3>{props.name}</h3>
-              <span className="faded">R$ 11,10</span>
-              <span>R$ {props.price}</span>
+              <span className="faded">R$ {(props.price/100).toFixed(2)}</span>
+              <span>R${(props.sellingPrice/100).toFixed(2)}</span>
             </div>
           </li>
       </Container>
