@@ -2,6 +2,9 @@
 
 Projeto feito utilizando [ReactJS](https://github.com/facebook/create-react-app) e [TypeScript](https://www.typescriptlang.org/).
 
+![.github/foto-1.png](.github/foto-1.png)
+![.github/foto-2.png](.github/foto-2.png)
+
 ## Para rodar o projeto
 
 Primeiramente rode `yarn install` para instalar as dependências necessárias.
