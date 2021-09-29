@@ -34,4 +34,20 @@ export const Container = styled.div`
       font-size: 1.5rem;
     }
   }
+  main .product-list {
+    max-height: 450px;
+    overflow-y: scroll;
+    ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  }
 `

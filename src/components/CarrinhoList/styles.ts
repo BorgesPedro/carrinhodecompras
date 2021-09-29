@@ -5,20 +5,6 @@ export const Container = styled.ul`
   padding: 1rem;
   border-top: 1px solid var(--divisor);
   border-bottom: 1px solid var(--divisor);
-  max-height: 450px;
-  overflow-y: scroll;
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f5f5f5;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
   li {
     display: flex;
     align-items: center;
