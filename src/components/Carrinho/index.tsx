@@ -45,7 +45,7 @@ export function Carrinho() {
               <p>Total</p>
               <span>R$ {(total/100).toFixed(2)}</span>
             </div>
-            {(total/100) > 10 && <p className="congratulations"> Parabéns, sua compra tem frete grátis!</p>
+            {(total/100) >= 10 && <p className="congratulations"> Parabéns, sua compra tem frete grátis!</p>
             }
           </section>
           <section className="finalizar-compra">
